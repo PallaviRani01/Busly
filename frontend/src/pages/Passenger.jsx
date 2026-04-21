@@ -13,7 +13,8 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
-const socket = io('http://localhost:5000');
+const BACKEND_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
+const socket = io(window.location.hostname === 'localhost' ? 'http://localhost:5000' : '', { path: window.location.hostname === 'localhost' ? '/socket.io' : '/_/backend/socket.io' });
 
 function App() {
   const [buses, setBuses] = useState({});
@@ -64,7 +65,7 @@ function App() {
     setErrorMsg('');
     setJourneyResult(null);
     try {
-      const res = await fetch(`http://localhost:5000/api/journey?source=${source}&destination=${destination}`);
+      const res = await fetch(`${BACKEND_URL}/api/journey?source=${source}&destination=${destination}`);
       const data = await res.json();
       if (data.success) {
         setJourneyResult(data);

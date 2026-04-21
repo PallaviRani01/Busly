@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:5000');
+const BACKEND_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '/_/backend';
+const socket = io(window.location.hostname === 'localhost' ? 'http://localhost:5000' : '', { path: window.location.hostname === 'localhost' ? '/socket.io' : '/_/backend/socket.io' });
 
 function App() {
   const [busId] = useState('PB01-A123'); // Custom bus ID for Punjab

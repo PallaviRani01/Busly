@@ -14,7 +14,8 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
-const socket = io('http://localhost:5000');
+const BACKEND_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '/_/backend';
+const socket = io(window.location.hostname === 'localhost' ? 'http://localhost:5000' : '', { path: window.location.hostname === 'localhost' ? '/socket.io' : '/_/backend/socket.io' });
 
 const data = [
   { time: '08:00', passengers: 400, capacity: 500 },
