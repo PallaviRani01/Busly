@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Chandigarh to Amritsar (PR-101)",
+    "origin": "Chandigarh",
+    "destination": "Amritsar",
+    "stops": [
+      { "stopName": "Chandigarh ISBT 43", "lat": 30.7244, "lng": 76.7589, "sequenceOrder": 1 },
+      { "stopName": "Ludhiana ISBT", "lat": 30.9010, "lng": 75.8573, "sequenceOrder": 2 },
+      { "stopName": "Jalandhar ISBT", "lat": 31.3260, "lng": 75.5762, "sequenceOrder": 3 },
+      { "stopName": "Amritsar ISBT", "lat": 31.6340, "lng": 74.8723, "sequenceOrder": 4 }
+    ]
+  },
+  {
+    "name": "Patiala to Pathankot (PR-102)",
+    "origin": "Patiala",
+    "destination": "Pathankot",
+    "stops": [
+      { "stopName": "Patiala Bus Stand", "lat": 30.3398, "lng": 76.3869, "sequenceOrder": 1 },
+      { "stopName": "Ludhiana ISBT", "lat": 30.9010, "lng": 75.8573, "sequenceOrder": 2 },
+      { "stopName": "Jalandhar ISBT", "lat": 31.3260, "lng": 75.5762, "sequenceOrder": 3 },
+      { "stopName": "Pathankot Bus Stand", "lat": 32.2733, "lng": 75.6521, "sequenceOrder": 4 }
+    ]
+  },
+  {
+    "name": "Bathinda to Chandigarh (PR-103)",
+    "origin": "Bathinda",
+    "destination": "Chandigarh",
+    "stops": [
+      { "stopName": "Bathinda ISBT", "lat": 30.2110, "lng": 74.9455, "sequenceOrder": 1 },
+      { "stopName": "Patiala Bus Stand", "lat": 30.3398, "lng": 76.3869, "sequenceOrder": 2 },
+      { "stopName": "Zirakpur", "lat": 30.6425, "lng": 76.8173, "sequenceOrder": 3 },
+      { "stopName": "Chandigarh ISBT 43", "lat": 30.7244, "lng": 76.7589, "sequenceOrder": 4 }
+    ]
+  }
+]
